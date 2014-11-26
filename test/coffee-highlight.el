@@ -1,6 +1,6 @@
 ;;; coffee-highlight.el --- Test for highlighting of coffee-mode.el
 
-;; Copyright (C) 2013 by Syohei YOSHIDA
+;; Copyright (C) 2014 by Syohei YOSHIDA
 
 ;; Author: Syohei YOSHIDA <syohex@gmail.com>
 
@@ -320,7 +320,7 @@ foo =
   (dolist (js-keyword '("if" "else" "new" "return" "try" "catch"
                         "finally" "throw" "break" "continue" "for" "in" "while"
                         "delete" "instanceof" "typeof" "switch" "super" "extends"
-                        "class" "until" "loop"))
+                        "class" "until" "loop" "yield"))
     (with-coffee-temp-buffer
       js-keyword
       (should (face-at-cursor-p 'font-lock-keyword-face)))))
